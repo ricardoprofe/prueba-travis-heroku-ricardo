@@ -9,5 +9,5 @@ deploy:
   app: curso-github-cefire
   on: main
   skip_cleanup: true
-  api_key: 31cc270e-ec80-44b9-aa26-7efb4abaad63
+  api_key: 
     
