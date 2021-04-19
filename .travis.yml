@@ -1,13 +1,14 @@
 language: php
 php:
 - 7.2
-before_script:
-#- composer install
+before_script: 
 script: echo 'none'
 deploy:
   provider: heroku
-  app: curso-github-cefire
-  on: main
-  skip_cleanup: true
-  api_key: 
-    
+  api_key:
+    secure: B4urK+2M8QlXnocpHkxM4Gle3HxezfB2IPJUTkdRQZGuQMhMevQSAZ4IV9XI7oXzXPITmtZ9ciuUDwo8X+af4EeoOUXMJ/oe3GLVpg+Rk2iucbtmoLqn9SOWyHFoiuKQjhkDBOgHUAa3Hvl2ZnqZ4+rV/nFovLlLFKCgtZravLtxV4kdn8xQwBtZvTgYREupHsqVcRxZYESrVexu0Z8tWJujrAesZ+tKhPKxfrgj4bgGxtY2qdEqalyJOgWFYfUZS807ovSYRmf3QOOXIdMSO900wjdz3i34PoJiFhMbq6qGa+cDrH1pQh7QYW59l61jhiAe3NZ/SpsoglZv9z3gJkR/9nRqj0800PsUhtA210SOELgZ7Wmh0zL0vgdqfz5CHS2/JE6jFoqg09t/X+W1ouWgnSxpleTD7LgCoIEHnqBTicQm8RFaD7Zc95omRmR33Ngm9HAHxEtoTqCXSiH+FqVtXeRXxUvIZl2bmmJlI5362wO5s67vN81v/yaMs13X4zD6tFuLdlSKBNbGw2/Nu9GgxU0L7wy8GH3Wybfledx8cKUP7CNibwWIIuj4BQslaxqb/K2tEIsJvWjQsDQLSlS6KxoV8Jqzu32HlGxBp+2hvLOD/eFJcg3cfjPL0tU+AKF9pJ9cw01H6R7maIS/hiitJ0P4q132bK3g9w8jl5Q=
+  app: prueba-travis-heroku
+  on:
+    repo: ricardoprofe/prueba-travis-heroku
+    branch: main
+  skip_cleanup: 'true'
